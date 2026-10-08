@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>فريق تسونامي لكرة القدم | Tsunami FC</title>
+    <style>
+        body {
+            background-color: #3b092f;
+            color: #ffffff;
+            font-family: Tahoma, sans-serif;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        h1 {
+            color: #ffcc00;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #ffcc00; }
+            to { text-shadow: 0 0 20px #ff007f, 0 0 30px #ffcc00; }
+        }
+        .team-photo {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 12px;
+            border: 3px solid #ffcc00;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+        .section-box {
+            background-color: #4e123e;
+            margin: 15px auto;
+            padding: 15px;
+            width: 340px;
+            border-radius: 10px;
+            border: 2px solid #ffcc00;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        h2 {
+            color: #4ade80;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #5d164c;
+            margin: 8px auto;
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #7a1f63;
+            font-size: 15px;
+        }
+        .best-player {
+            background: linear-gradient(135deg, #ffcc00, #ff8800);
+            color: #000000;
+            font-weight: bold;
+            border: 2px solid #ffffff;
+        }
+        .cheer-btn {
+            background-color: #ffcc00;
+            color: #3b092f;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: 0.2s;
+        }
+        .cheer-btn:hover {
+            background-color: #ffdd44;
+            transform: scale(1.05);
+        }
+        .nav-btn {
+            display: block;
+            background-color: #4ade80;
+            color: #000000;
+            padding: 12px;
+            margin: 10px auto;
+            width: 300px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            border: 1px solid #22c55e;
+            box-sizing: border-box;
+        }
+        .nav-btn:hover {
+            background-color: #22c55e;
+        }
+    </style>
+</head>
+<body>
+    <h1>نادي تسونامي الرياضي ⚽</h1>
+    <p>الموقع الرسمي لفريقنا في عتق</p>
+    
+    <img src="1000662024.jpg" alt="صورة فريق تسونامي" class="team-photo">
+
+    <div class="section-box">
+        <h2>🏟️ ملعبنا الرسمي:</h2>
+        <p>ملعب لوسيل عتق</p>
+    </div>
+
+    <div class="section-box">
+        <h2>👑 رئيس الفريق:</h2>
+        <p>أحمد لشدف</p>
+    </div>
+
+    <div class="section-box">
+        <h2>📅 جدول المباريات القادمة:</h2>
+        <ul>
+            <li>تسونامي × (فريق الصحيفة) - الأربعاء</li>
+            <li>تسونامي × (فريق آل حبتور) - الأحد</li>
+        </ul>
+    </div>
+
+    <!-- زر نظيف وفخم ينتقل لصفحة التشكيلة -->
+    <div class="section-box">
+        <h2>👥 تشكيلة الفريق:</h2>
+        <p style="font-size: 13px; color: #ddd; margin-bottom: 8px;">اضغط هنا لعرض تفاصيل الأسماء والنجوم</p>
+        <a href="players.html" class="nav-btn">عرض تفاصيل التشكيلة الكاملة 👥</a>
+    </div>
+
+    <div class="section-box">
+        <h2>🎯 أفضل 3 هدافين:</h2>
+        <ul>
+            <li>1. كنج</li>
+            <li>2. نبيل</li>
+            <li>3. رامي هههه</li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h2>🌟 أسطورة الفريق:</h2>
+        <ul>
+            <li class="best-player">⭐ نبيل ⭐</li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h2>🔥 حماس الجماهير:</h2>
+        <button class="cheer-btn" onclick="increaseCheers()">اضغط لتشجيع الفريق! 👏</button>
+        <p id="cheer-count" style="margin-top: 10px; font-weight: bold; color: #ffcc00;">عدد التشجيعات: 0</p>
+    </div>
+
+    <script>
+        let count = 0;
+        function increaseCheers() {
+            count++;
+            document.getElementById("cheer-count").innerText = "عدد التشجيعات: " + count;
+        }
+    </script>
+</body>
+</html>
